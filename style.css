@@ -1,4 +1,4 @@
-/* SOLUZIONE EX.1 */
+/* EX.1 SOLUTION */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -10,7 +10,7 @@
     background-color: red;
 }
 
-/* SOLUZIONE EX.2 */
+/* EX.2 SOLUTION */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-/* SOLUZIONE EX.3 */
+/* EX.3 SOLUTION */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -34,7 +34,7 @@
     border-radius: 50%;
 }
 
-/* SOLUZIONE EX.4 */
+/* EX.4 SOLUTION */
 .ex-4-square {
     width: 100px;
     height: 100px;
@@ -46,7 +46,7 @@
     opacity: 0;
 }
 
-/* SOLUZIONE EX.5 */
+/* EX.5 SOLUTION */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -65,14 +65,51 @@
     height: 40px;
 }
 
+/* EX.6 SOLUTION */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+    transition: all 2s ease-in-out;
 }
 
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/* EX.7 SOLUTION */
+.ex-7-img, .ex-8-img {
+    animation: airplane 10s infinite;
+}
+
+@keyframes airplane {
+    0% {
+        filter: grayscale(1);
+    }
+    
+    25% {
+        filter: hue-rotate(180deg);
+    }
+
+    50% {
+        filter: grayscale(1);
+    }
+}
+
+/* EX-8 SOLUTION */
+.ex-8-img, .ex-9-img {
+    border-radius: 10%;
+}
+
+/* EX.9 SOLUTION */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    animation: airplane 10s infinite;
 }
+
+.ex-9-img:hover {
+    width: 300px;
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
