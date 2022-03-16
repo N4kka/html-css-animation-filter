@@ -114,12 +114,10 @@
 .ex-10-icon {
     font-size: 60px;
     animation: loader 3s linear infinite;
+    animation-direction: reverse;
 }
 
 @keyframes loader {
-    0% {
-        transform: rotate(0deg);
-    }
     100% {
         transform: rotate(360deg);
     }
@@ -128,7 +126,10 @@
 /* EX.11 SOLUTION */
 .ex-11-icon {
     font-size: 60px;
-    animation: loader-2 3s linear;
+}
+
+.ex-11-icon:hover {
+    animation: loader-2 2s linear infinite;     
 }
 
 @keyframes loader-2 {
@@ -163,18 +164,24 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
     animation: white-space 3s linear;
 }
 
 @keyframes white-space {
-    from {
+    0%   {
         top: -10px;
         left: 10%;
     }
 
-    to {
-        top: -10px;
-        left: 50%;
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
     }
 }
 
@@ -197,12 +204,11 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
-    animation: white-space-2  3s linear;;
 }
 
 /* EX.13 SOLUTION */
 .ex-13-button:hover {
-    animation: button-rotation 3s linear;
+    animation: button-rotation 1s linear;
 }
 
 @keyframes button-rotation {
